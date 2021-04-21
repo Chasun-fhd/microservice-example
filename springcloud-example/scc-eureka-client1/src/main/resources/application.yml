@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: eureka-client1
+server:
+  port: 8081
+custom:
+  node1-port: 8762
+  node2-port: 8763
+  node3-port: 8764
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://${spring.cloud.client.ip-address}:${custom.node1-port}/eureka,http://${spring.cloud.client.ip-address}:${custom.node2-port}/eureka,http://${spring.cloud.client.ip-address}:${custom.node3-port}/eureka
+logging:
+  level:
+    root: debug

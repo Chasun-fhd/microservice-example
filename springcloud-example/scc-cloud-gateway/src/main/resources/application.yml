@@ -1,0 +1,46 @@
+spring:
+  application:
+    name: scc-gateway
+  cloud:
+    gateway:
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedMethods: "*"
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+      routes:
+        - id : eureka-client1
+          uri : lb://eureka-client1
+          predicates:
+            - Path=/ec1/{segment}
+          filters:
+            - SetPath=/{segment}
+        - id : eureka-client2
+          uri: lb://eureka-client2
+          predicates:
+            - Path=/ec2/{segment}
+          filters:
+            - SetPath=/{segment}
+
+#custom config
+custom:
+  node1-port: 8762
+  node2-port: 8763
+  node3-port: 8764
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://${spring.cloud.client.ip-address}:${custom.node1-port}/eureka,http://${spring.cloud.client.ip-address}:${custom.node2-port}/eureka,http://${spring.cloud.client.ip-address}:${custom.node3-port}/eureka
+    registry-fetch-interval-seconds: 10
+server:
+  port: 9110
+
+logging:
+  level:
+    root: debug

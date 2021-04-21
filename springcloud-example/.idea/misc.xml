@@ -5,6 +5,9 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/scc-eureka-client1/pom.xml" />
+        <option value="$PROJECT_DIR$/scc-eureka-client2/pom.xml" />
+        <option value="$PROJECT_DIR$/scc-cloud-gateway/pom.xml" />
       </list>
     </option>
   </component>
