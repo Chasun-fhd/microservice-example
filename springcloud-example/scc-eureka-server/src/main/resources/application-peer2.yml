@@ -1,0 +1,76 @@
+spring:
+  application:
+    name: eureka-server
+eureka:
+  custom:
+    node1-port: 8762
+    node2-port: 8763
+    node3-port: 8764
+---
+spring:
+  profiles: default
+eureka:
+  instance:
+    appname: eureka-default
+    prefer-ip-address: true
+    ip-address: ${spring.cloud.client.ip-address}
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://${spring.cloud.client.ip-address}:${server.port}/eureka
+    instance-id: ${spring.application.name}:${spring.cloud.client.ip-address}:${server.port}
+server:
+  port: 8761
+
+---
+spring:
+  profiles: eureka.node1
+eureka:
+  instance:
+    prefer-ip-address: true
+    appname: eureka.node1
+    instance-id: ${spring.application.name}:${spring.cloud.client.ip-address}:${server.port}
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://${spring.cloud.client.ip-address}:${eureka.custom.node1-port}/eureka,http://${spring.cloud.client.ip-address}:${eureka.custom.node2-port}/eureka,http://${spring.cloud.client.ip-address}:${eureka.custom.node3-port}/eureka
+  server:
+    eviction-interval-timer-in-ms: 10000
+server:
+  port: ${eureka.custom.node1-port}
+---
+spring:
+  profiles: eureka.node2
+eureka:
+  instance:
+    appname: eureka.node2
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${spring.cloud.client.ip-address}:${server.port}
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://${spring.cloud.client.ip-address}:${eureka.custom.node1-port}/eureka,http://${spring.cloud.client.ip-address}:${eureka.custom.node2-port}/eureka,http://${spring.cloud.client.ip-address}:${eureka.custom.node3-port}/eureka
+  server:
+    eviction-interval-timer-in-ms: 10000
+server:
+  port: ${eureka.custom.node2-port}
+---
+spring:
+  profiles: eureka.node3
+eureka:
+  instance:
+    appname: eureka.node3
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${spring.cloud.client.ip-address}:${server.port}
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://${spring.cloud.client.ip-address}:${eureka.custom.node1-port}/eureka,http://${spring.cloud.client.ip-address}:${eureka.custom.node2-port}/eureka,http://${spring.cloud.client.ip-address}:${eureka.custom.node3-port}/eureka
+  server:
+    eviction-interval-timer-in-ms: 10000
+server:
+  port: ${eureka.custom.node3-port}
