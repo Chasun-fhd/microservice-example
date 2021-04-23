@@ -16,15 +16,15 @@ spring:
         - id : eureka-client1
           uri : lb://eureka-client1
           predicates:
-            - Path=/ec1/{segment}
+            - Path=/ec1/**
           filters:
-            - SetPath=/{segment}
+            - StripPrefix=1
         - id : eureka-client2
           uri: lb://eureka-client2
           predicates:
-            - Path=/ec2/{segment}
+            - Path=/ec2/**
           filters:
-            - SetPath=/{segment}
+            - StripPrefix=1
 
 #custom config
 custom:
@@ -44,3 +44,6 @@ server:
 logging:
   level:
     root: debug
+gateway:
+  global:
+    includeEurekaInstanceIds: eureka-client1
