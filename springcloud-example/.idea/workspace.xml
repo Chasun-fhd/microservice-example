@@ -4,45 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="86f1fcc2-ec1e-4814-9438-f059d9c63f69" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/scc-cloud-gateway/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scc-cloud-gateway/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scc-cloud-gateway/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scc-cloud-gateway/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scc-cloud-gateway/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scc-cloud-gateway/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scc-cloud-gateway/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scc-cloud-gateway/src/main/java/com/example/scccloudgateway/SccCloudGatewayApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scc-cloud-gateway/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scc-cloud-gateway/src/test/java/com/example/scccloudgateway/SccCloudGatewayApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scc-eureka-client1/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scc-eureka-client1/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scc-eureka-client1/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scc-eureka-client1/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scc-eureka-client1/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scc-eureka-client1/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scc-eureka-client1/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scc-eureka-client1/src/main/java/com/example/scceurekaclient1/SccEurekaClient1Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scc-eureka-client1/src/main/java/com/example/scceurekaclient1/controller/EchoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scc-eureka-client1/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scc-eureka-client1/src/test/java/com/example/scceurekaclient1/SccEurekaClient1ApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scc-eureka-client2/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scc-eureka-client2/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scc-eureka-client2/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scc-eureka-client2/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scc-eureka-client2/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scc-eureka-client2/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scc-eureka-client2/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scc-eureka-client2/src/main/java/com/example/scceurekaclient2/SccEurekaClient2Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scc-eureka-client2/src/main/java/com/example/scceurekaclient2/controller/EchoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scc-eureka-client2/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scc-eureka-client2/src/test/java/com/example/scceurekaclient2/SccEurekaClient2ApplicationTests.java" afterDir="false" />
+    <list default="true" id="86f1fcc2-ec1e-4814-9438-f059d9c63f69" name="Default Changelist" comment="add gateway">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scc-eureka-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/scc-eureka-server/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scc-cloud-gateway/src/main/java/com/example/scccloudgateway/filter/GlobalAAASecurityFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/scc-cloud-gateway/src/main/java/com/example/scccloudgateway/filter/GlobalAAASecurityFilter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +21,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -101,7 +68,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -111,12 +78,18 @@
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\developer\microservice-example\springcloud-example" />
+      <recent name="E:\developer\microservice-example\springcloud-example\scc-eureka-server\src\main\resources" />
+    </key>
+  </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn clean install -DskipTests" />
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.SccCloudGatewayApplication">
+  <component name="RunManager" selected="Spring Boot.EurekaServerApp-8764">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -139,7 +112,7 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.EurekaServerApp" />
-      <option name="ACTIVE_PROFILES" value="eureka.node1" />
+      <option name="ACTIVE_PROFILES" value="peer1" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -154,7 +127,7 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.EurekaServerApp" />
-      <option name="ACTIVE_PROFILES" value="eureka.node2" />
+      <option name="ACTIVE_PROFILES" value="peer2" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -169,7 +142,7 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.EurekaServerApp" />
-      <option name="ACTIVE_PROFILES" value="eureka.node3" />
+      <option name="ACTIVE_PROFILES" value="peer3" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -237,8 +210,16 @@
       <workItem from="1618901631423" duration="1380000" />
       <workItem from="1618904407968" duration="1783000" />
       <workItem from="1618918865616" duration="7489000" />
-      <workItem from="1618992962391" duration="14037000" />
+      <workItem from="1618992962391" duration="38734000" />
     </task>
+    <task id="LOCAL-00001" summary="add gateway">
+      <created>1619157626317</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1619157626317</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,30 +237,8 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/scc-eureka-client1/src/main/java/com/example/scceurekaclient1/controller/EchoController.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$PROJECT_DIR$/../../apache-maven-3.6.3/repo/org/springframework/cloud/spring-cloud-netflix-ribbon/2.0.3.RELEASE/spring-cloud-netflix-ribbon-2.0.3.RELEASE.jar!/org/springframework/cloud/netflix/ribbon/RibbonLoadBalancerClient.class</url>
-          <line>49</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$PROJECT_DIR$/../../apache-maven-3.6.3/repo/org/springframework/cloud/spring-cloud-netflix-ribbon/2.0.3.RELEASE/spring-cloud-netflix-ribbon-2.0.3.RELEASE.jar!/org/springframework/cloud/netflix/ribbon/RibbonLoadBalancerClient.class</url>
-          <line>30</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$PROJECT_DIR$/../../apache-maven-3.6.3/repo/org/springframework/cloud/spring-cloud-gateway-core/2.0.3.RELEASE/spring-cloud-gateway-core-2.0.3.RELEASE.jar!/org/springframework/cloud/gateway/filter/LoadBalancerClientFilter.class</url>
-          <line>33</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add gateway" />
+    <option name="LAST_COMMIT_MESSAGE" value="add gateway" />
   </component>
 </project>
